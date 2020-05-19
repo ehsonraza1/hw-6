@@ -3,7 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather APIs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <div id="jimbo" class="jumbotron jumbotron-fluid bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center">Weather Dashboard</h2>
+      </div>
+    </div>
+    <!-- Search Container -->
+    <div class="container">
+      <div class="row">
+        <!-- Search Goes here -->
+        <div class="card" id="city-search">
+          <div class="card-header">
+            <h4>Search for a City:</h4>
+            <!-- Search Button Goes here -->
+            <form class="example" action="action_page.php">
+              <input
+                id="city-name"
+                type="text"
+                placeholder="Search Weather.."
+                name="search"
+              />
+              <button id="searchBtn" class="btn btn-primary" type="submit">
+                <i class="fa fa-search" background-color="blue"></i>
+              </button>
+            </form>
+            <div id="cities" class="card hide" style="width: auto;">
+              <ul id="city-list" class="list-group"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- weather statscontainer -->
+      <div id="container" data-type="city-stats"></div>
+      <!-- container Div closes here -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
