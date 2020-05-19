@@ -8,12 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+     <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        />
   </head>
   <body>
     <div id="jimbo" class="jumbotron jumbotron-fluid bg-dark text-white">
@@ -48,10 +46,22 @@
       </div>
 
       <!-- weather statscontainer -->
-      <div id="container" data-type="city-stats"></div>
+       <div class="col-lg-8">
+         <!-- Div for current weather -->
+        <div class="row" id="current-weather">
+        </div>
+
+        <!-- //Div for forecast -->
+        <div class="row" id="five-day-forecast">
+          <div class="card-deck">
+          </div>
+        </div>
+        
+    </div>
+  </div>
       <!-- container Div closes here -->
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

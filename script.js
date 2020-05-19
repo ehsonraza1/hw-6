@@ -2,7 +2,7 @@
 var city = "";
 var apiKey = "291838650f5204a838af3a3257c22f77";
 var CityArr = [];
-
+//local storage boilder plate
 var citySearch = JSON.parse(localStorage.getItem("city-search"));
 if (citySearch !== null) {
   citySearch.forEach(function (city) {
@@ -35,6 +35,7 @@ $.ajax({
   console.log();
   // Storing an array of results in the results variable
   var results = response.data;
+  console.log(queryURL);
 
   // Looping over every result item
   for (var i = 0; i < results.length; i++) {}
